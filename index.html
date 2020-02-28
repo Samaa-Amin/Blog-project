@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>landing page</title>
+    <script src="https://kit.fontawesome.com/f451ce2063.js" crossorigin="anonymous"></script>
+    
+<style>
+        /* general classes */
+.container {
+    width:80%;
+    margin: 0 auto;
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.padding {
+    padding-bottom: 100px;
+} 
+.btn{
+    padding: 10px 20px;
+    border: none;
+    background-color: #f8D90f;
+    color: black;
+    text-transform: uppercase;
+    border-radius: 25px;
+}
+.underline::after{
+    height: 2px;
+    width: 50px;
+    background-color: #f8D90f;
+    content:"";
+    display: block;
+    margin-top: 20px;
+
+}
+
+
+/* end general */
+/* strat navbar */
+
+.navbar-subscribe{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+.navbar-subscribe h2{
+    margin: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.navbar-subscribe a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-lis ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-lis ul a {
+    text-decoration: none;
+    color: black;
+}
+
+/* end navbar */
+/* strat header */
+
+.header{
+    background-color: #333;
+    color: white;
+    margin-bottom: 100px;
+    
+}
+.header-text {
+    width: 40%;
+    padding:50px 50px;
+}
+.header-text h1 {
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+/* end header */
+/* start posts */
+.posts{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.posts div {
+    padding: 30px;
+    border: 2px solid #ddd;
+    width:40%;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+.posts h2 {}
+    </style>
+
+</head>
+<body>
+    <!-- start navbar -->
+    <nav class="navbar container">
+        <section class="navbar-subscribe">
+            <button class="btn">subscribe</button>
+            <h2>blog</h2>
+            <section class="navbar-subscribe__signup">
+                <i class="fas fa-search"></i>
+                <a href="./login.html">sign up</a>
+            </section>
+        </section>
+        <section class="navbar-lis">
+            <ul>
+                <li> <a href="">world</a> </li>
+                <li> <a href="">u.s.</a> </li>
+                <li> <a href="">technology</a> </li>
+                <li> <a href="">design</a> </li>
+                <li> <a href="">culture</a> </li>
+                <li> <a href="">business</a> </li>
+                <li> <a href="">politics</a> </li>
+                <li> <a href="">options</a> </li>
+                <li> <a href="">scince</a> </li>
+                <li> <a href="">health</a> </li>
+                <li> <a href="">style</a> </li>
+                <li> <a href="">travel</a> </li>
+            </ul>
+        </section>
+    </nav>
+<!-- end navbar -->
+<!-- strat header section -->
+    <header class="header container">
+        <section class="header-text">
+            <h1>Lorem ipsum dolor sit amet consectetur </h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, quam dicta omnis vero impedit aliquid perferendis maxime fugit corporis minima, explicabo qui et tenetur modi voluptates placeat quo, velit voluptatem!</p>
+            <button class="btn">continue reading</button>
+        </section>
+    </header>
+
+    <!-- end header -->
+    <!-- start posts -->
+    <section class="posts container">
+        
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

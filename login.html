@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>log in</title>
+    <style>
+    .btn{
+    padding: 10px 20px;
+    border: none;
+    background-color: #f8D90f;
+    color: black;
+    text-transform: uppercase;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.underline::after{
+    height: 2px;
+    width: 50px;
+    background-color: #f8D90f;
+    content:"";
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+
+
+.signup{
+    /* width: 100%; */
+    height: 100vh;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+.signup-wrapper{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 40%;
+    width: 30%;
+}
+.signup-wrapper h1{
+    font-size: 3.5rem;
+    color:black;
+    margin: 0;
+    
+}
+.signup-wrapper form {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height:40%;
+}
+.signup-wrapper form input{
+    padding: 15px 15px;
+    margin-bottom:10px ;
+    
+}
+form div {
+    color: red;
+    padding-bottom: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <section class="signup">
+        <section class="signup-wrapper">
+            <section class="signup-logo">
+                <h1 class="underline">Blog.</h1>
+            </section>
+            <section class="signup-title">
+                <p>please sign in</p>
+            </section>
+            <form action="" target="" id="form"  method="post" novalidate >
+                <input type="email" placeholder="Enter email" id="email">
+                <div id="emailerror"></div>
+                <input type="password" placeholder="Enter password" id="password">
+                <div id="passerror"> </div>
+                <button target="" class="btn">sign in</button >
+            </form>
+        </section>
+    </section>
+    <script src="login.js"></script>
+</body>
+</html>

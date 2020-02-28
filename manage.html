@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dashboard</title>
+    <style>
+    /* general classes */
+.container {
+    width:80%;
+    margin: 0 auto;
+}
+body {
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 0;
+}
+.padding {
+    padding-bottom: 100px;
+} 
+button {
+    padding: 10px 20px;
+    border: none;
+    border: 2px solid #f8D90f;
+    background-color: white;
+    color: black;
+    text-transform: capitalize;
+    border-radius: 25px;
+    margin: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
+    
+}
+a{
+    padding: 10px 20px;
+    border: none;
+    border: 2px solid #f8D90f;
+    background-color: white;
+    color: black;
+    text-transform: capitalize;
+    border-radius: 25px;
+    margin: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: context-menu;
+    text-decoration: none;
+}
+.underline::after{
+    height: 2px;
+    width: 30px;
+    background-color: #f8D90f;
+    content:"";
+    display: block;
+    margin-top: 20px;
+    margin: 0 auto;
+    
+
+}
+
+/* table */
+td{
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+tr:first-child{
+    background-color: #333;
+    color: white;
+    
+
+}
+th{
+    font-size: 1.3rem;
+    padding: 20px;
+    
+}
+
+td:last-child{
+    text-align: center;
+}
+table{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+td:nth-of-type(1){
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 30%;
+}
+    </style>
+</head>
+<body>
+    <section class="table "></section>
+        <table class="container">
+            <tr >
+                <th class="underline">Post Name</th>
+                <th class="underline"> Post Content</th>
+                <th class="underline">Action</th>
+            </tr>
+           
+        </table>
+    </section>
+    <script src="manage.js"></script>
+</body>
+</html>

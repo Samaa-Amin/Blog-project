@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>edite page</title>
+    <style>
+    .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 100vh;
+    /* padding-bottom: 100px; */
+    
+}
+.btn{
+    padding: 10px 20px;
+    border: none;
+    background-color: #f8D90f;
+    color: black;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    
+}
+.underline::after{
+    height: 2px;
+    width: 50px;
+    background-color: #f8D90f;
+    content:"";
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+h2{
+    font-size: 2rem;
+    text-transform: capitalize;
+
+}
+textarea{
+    width: 100%;
+    border: 2px solid #ddd;
+    font-size: 1.2rem;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    padding: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <section class="container">
+        <section class="title">
+            <h2 class="underline">post name</h2>
+            <textarea name="title" id="title" cols="30" rows="10"></textarea>
+        </section>
+        <section class="body">
+            <h2 class="underline">post content</h2>
+            <textarea name="body" id="body" cols="30" rows="10"></textarea>
+        </section>
+        <button class="btn" id="btn">save</button>
+    </section>
+    <script src="./edite.js"></script>
+</body>
+</html>
